@@ -82,7 +82,7 @@
   const modelViewer = document.querySelector("model-viewer");
 
   window.switchSrc = (element, name) => {
-    const base = "https://cdn.glitch.global/58d0a352-2e99-4517-92b4-dd09605fce86" + name;
+    const base = "https://cdn.glitch.global/58d0a352-2e99-4517-92b4-dd09605fce86";
     modelViewer.src = base + name;
     modelViewer.poster = base + '.png';
     const slides = document.querySelectorAll(".slide");
