@@ -1,23 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>NEOTIX CYCLE DEMO</title>
+    <title>AR 3d models</title>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" lang="pt-br" content="NEOTIX CYCLE DEMO" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="NEOTIX CYCLE DEMO" />
-    <meta name="theme-color" content="#EBB61F" />
-    <meta name="twitter:card" content="player"/>
-    <meta name="twitter:site" content="modelviewer"/>
-    <meta name="twitter:player:width" content="480"/>
-    <meta name="twitter:player:height" content="480"/>
-    <meta name="twitter:player" content="https://modelviewer.dev/examples/twitter/player.html?src=https://cdn.glitch.me/550d3a05-de0a-4929-9d80-4d29178369b8/Bike2.glb?v=1639598314963&poster=https://cdn.glitch.me/550d3a05-de0a-4929-9d80-4d29178369b8/Bike2Poster.webp&alt=Do%20design%20inovador%20aos%20componentes%20de%20proced%C3%AAncia%20e%20qualidade,%20pensamos%20em%20cada%20detalhe%20das%20nossas%20bikes%20para%20que%20voc%C3%AA%20colecione%20hist%C3%B3rias%20e%20pedaladas%20incr%C3%ADveis.%20&environmentImage=https://modelviewer.dev/shared-assets/environments/moon_1k.hdr"/>
-    <meta property="og:title" content="NEOTIX CYCLE DEMO"/>
-    <meta property="og:description" content="Do design inovador aos componentes de procedência e qualidade, pensamos em cada detalhe das nossas bikes para que você colecione histórias e pedaladas incríveis. "/>
-    <meta property="og:image" content="https://cdn.glitch.me/550d3a05-de0a-4929-9d80-4d29178369b8/poster.webp?v=1639603927885"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <link rel="stylesheet" href="demo-styles3.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -46,7 +31,7 @@
       <model-viewer
         id="model-viewer"
         src="../../assets/Speaker-JBL.glb"
-        poster="https://cdn.glitch.me/550d3a05-de0a-4929-9d80-4d29178369b8/poster.webp?v=1639603927885"
+        poster="../../assets/Speaker-JBL.webp"
         alt="NEOTIX CYCLE DEMO"
         shadow-intensity="3.8"
         camera-controls
@@ -60,22 +45,7 @@
         oncontextmenu="return false;"
       >
         
-      <button class="Hotspot" slot="hotspot-1" data-position="0.021652429656029135m 1.4643635734200455m 0.4614263460778892m" data-normal="0.9995959491122697m -0.020561903162868395m 0.019625153672313916m" data-orbit="-50.94862deg 84.56856deg 0.06545582m" data-target="0.021652429656029135m 1.4643635734200455m 0.4614263460778892m" data-fov="12.91deg" data-visibility-attribute="visible">
-      <div class="HotspotAnnotation" onclick='annotationClicked(this)' >Segurança</div>
-      </button>
-      <button class="Hotspot" slot="hotspot-2" data-position="0.03323465608204483m 1.7456965277218954m 0.9633126732252862m" data-normal="0.6130924320374928m 0.3857435282187356m 0.6894342609819403m" data-orbit="-20.94862deg 64.56856deg 0.86545582m" data-target="0.03323465608204483m 1.7456965277218954m 0.9633126732252862m" data-fov="22.91deg" data-visibility-attribute="visible">
-      <div class="HotspotAnnotation" onclick='annotationClicked(this)' >Força</div>
-      </button>
-      <button class="Hotspot" slot="hotspot-3" data-position="-0.08786772449997013m 0.8735665888411929m -1.242048772877014m" data-normal="0.9986176878038993m -0.0008907634331177366m 0.05255397364329706m" data-orbit="50.94862deg 24.56856deg 0.06545582m" data-target="-0.08786772449997013m 0.8735665888411929m -1.242048772877014m" data-fov="6.91deg" data-visibility-attribute="visible">
-      <div class="HotspotAnnotation" onclick='annotationClicked(this)' >Precisão</div>
-      </button>   
       
-
-
-     
-    
-    
-    
   
   <button slot="ar-button" id="ar-button">
     View in your space
@@ -91,15 +61,15 @@
 
   <div class="slider">
     <div class="slides">
-      <button class="slide selected" onclick="switchSrc(this, 'Speaker-JBL')" style="background-image: url('../../assets/Speaker-JBL.png');">
+      <button class="slide selected" onclick="switchSrc(this, 'Speaker-JBL')" style="background-image: url('../../assets/Speaker-JBL.webp');">
 
-      </button><button class="slide" onclick="switchSrc(this, 'Sofa-blue')" style="background-image: url('../../assets/Sofa-blue.png');">
+      </button><button class="slide" onclick="switchSrc(this, 'Sofa-blue')" style="background-image: url('../../assets/Sofa-blue.webp');">
 
-      </button><button class="slide" onclick="switchSrc(this, 'Speaker-iLive')" style="background-image: url('../../assets/Speaker-iLive.png');">
+      </button><button class="slide" onclick="switchSrc(this, 'Speaker-iLive')" style="background-image: url('../../assets/Speaker-iLive.webp');">
       
-      </button><button class="slide" onclick="switchSrc(this, 'Arcade')" style="background-image: url('../../assets/Arcade.png');">
+      </button><button class="slide" onclick="switchSrc(this, 'Arcade')" style="background-image: url('../../assets/Arcade.webp');">
       
-      </button><button class="slide" onclick="switchSrc(this, 'Sofa-black')" style="background-image: url('../../assets/Sofa-black.png');">    
+      </button><button class="slide" onclick="switchSrc(this, 'Sofa-black')" style="background-image: url('../../assets/Sofa-black.webp');">    
     </button></div>
   </div>
 </model-viewer>
