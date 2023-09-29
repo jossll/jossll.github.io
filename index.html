@@ -61,15 +61,15 @@
 
   <div class="slider">
     <div class="slides">
-      <button class="slide selected" onclick="switchSrc(this, 'Speaker-JBL')" style="background-image: url('../../assets/Speaker-JBL.webp');">
+      <button class="slide selected" onclick="switchSrc(this, 'Speaker-JBL.glb?v=1696014926062')" style="background-image: url('../../assets/Speaker-JBL.webp');">
 
-      </button><button class="slide" onclick="switchSrc(this, 'Sofa-blue')" style="background-image: url('../../assets/Sofa-blue.webp');">
+      </button><button class="slide" onclick="switchSrc(this, 'Sofa-blue.glb?v=1696014924745')" style="background-image: url('../../assets/Sofa-blue.webp');">
 
       </button><button class="slide" onclick="switchSrc(this, 'Speaker-iLive')" style="background-image: url('../../assets/Speaker-iLive.webp');">
       
       </button><button class="slide" onclick="switchSrc(this, 'Arcade')" style="background-image: url('../../assets/Arcade.webp');">
       
-      </button><button class="slide" onclick="switchSrc(this, 'Sofa-black')" style="background-image: url('../../assets/Sofa-black.webp');">    
+      </button><button class="slide" onclick="switchSrc(this, 'Sofa-black.glb?v=1696014922874')" style="background-image: url('../../assets/Sofa-black.webp');">    
     </button></div>
   </div>
 </model-viewer>
@@ -82,8 +82,8 @@
   const modelViewer = document.querySelector("model-viewer");
 
   window.switchSrc = (element, name) => {
-    const base = "../../assets/" + name;
-    modelViewer.src = base + '.glb';
+    const base = "https://cdn.glitch.global/58d0a352-2e99-4517-92b4-dd09605fce86" + name;
+    modelViewer.src = base + name;
     modelViewer.poster = base + '.png';
     const slides = document.querySelectorAll(".slide");
     slides.forEach((element) => {element.classList.remove("selected");});
