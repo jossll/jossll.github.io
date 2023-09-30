@@ -209,10 +209,11 @@ model-viewer--poster {
 
 }
 
-/* This keeps child nodes hidden while the element loads 
+
+This keeps child nodes hidden while the element loads 
   :not(:defined) > * {
     display: flex;
-  }*/
+  }
 
   
 
